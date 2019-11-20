@@ -34,7 +34,39 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
+.btn-primary {
+  @apply bg-blue-700 text-white px-6 py-4 rounded mb-4 tracking-wider font-semibold uppercase
+}
 
+.btn-secondary {
+  @apply bg-white border px-6 py-4 rounded mb-4 uppercase tracking-wider
+}
+
+.icon-search {
+  @apply absolute mt-3 mr-4;
+  left: 10px;
+  top: 1px;
+}
+
+.banner {
+  background: #f8f9fa;
+  background-image: url('https://images.unsplash.com/photo-1515442261605-65987783cb6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=8https://godzilla-2019.s3-ap-southeast-1.amazonaws.com/photo-1515442261605-65987783cb6a.jpeg');
+  background-position: left 50% top -100px;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  padding: 72px 24px
+}
+
+@screen md{
+  .btn-primary{
+    @apply mr-4
+  }
+
+  .banner{
+    background-position: left 500px top 50%;
+    background-size: 650px
+  }
+}
 
   /**
   * This injects all of Tailwind's utility classes, generated based on your
